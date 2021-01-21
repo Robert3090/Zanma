@@ -11,14 +11,13 @@
 </head>
 
 <body>
-    <div class="conatiner mx-auto">
+    <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-2">
 
-            <header class="col-span-12 h-contain w-full">
+            <header class="w-full col-span-12 h-contain">
 
-                <div class="absolute text-center pl-10 leading-none">
-                    <h1 class="text-white text-5xl">Zanma Devs</h1>
-                    <p class="text-white text-2xl">Somos <span></span></p>
+                <div class="absolute pl-10 leading-none text-center">
+                    <h1 class="text-5xl text-white">Zanma Devs</h1>
                 </div>
 
                 <video class="w-full" autoplay="autoplay" loop="loop" preload="auto" src="video/code.mp4" muted></video>
@@ -28,7 +27,7 @@
             <section class="col-span-12 text-center">
                 <div>
                     <p class="text-3xl">
-                        La modernidad , la elegancia y lo atrevido en nuetras paginas
+                        La modernidad, la elegancia y lo atrevido en nuestras páginas
                     </p>
                 </div>
 
@@ -37,22 +36,52 @@
 
             <section class="col-span-12 bg-fixed bg-center bg-cover h-80" style="background-image: url(img/portada1.jpg);">
                 <div class="p-2">
-                    <P class="text-white text-3xl text-center">
+                    <P class="text-3xl text-center text-white">
                         Asi como creces tú , tambien hazlo con tu negocio
                     </P>
                 </div>
 
             </section>
 
+            <!-- sección para Quiénes somos -->
+            <section class="grid grid-cols-1 col-span-12 gap-2 text-center md:grid-cols-2 bg-gradient-to-r from-green-400 to-blue-500">
+                    <div class=" md:col-span-2">
+                        <p class="text-4xl font-extrabold">Quiénes Somos</p>
+                        <p class="text-2xl">
+                            Somos un equipo de desarrolladores
+                            web en constante aprendizaje
+                            para ir creando aplicaciones cada vez más completas.
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <p class="text-4xl font-extrabold">Nuestra misión</p>
+                        <p class="text-2xl">
+                            Acercarte con tus potenciales clientes 
+                            haciendo la página de tu negocio atractiva 
+                            para crear un vínculo con ellos
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <p class="text-4xl font-extrabold">Nuestra esencia</p>
+                        <p class="text-2xl">
+                            Nos mantenemos constantemente actualizados con las
+                            tendencias de diseño para hacer que tu página de presentación
+                            tenga un estilo moderno y fresco.
+                        </p>
+                    </div>
+            </section>
+
            <!-- Aqui estara seccion de cards -->
             <section class="col-span-12">
-                <h2>Cards</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                    <div class="text-center bg-black text-white">
+                <h2 class="text-center">Paquetes para tu negocio</h2>
+                <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
+                    <div class="text-center text-white bg-black">
                         <p>Paquete 1</p>
 
-                        <ul class="list-none p-1">
-                            <li class="bg-blue-400 p-4">
+                        <ul class="p-1 list-none">
+                            <li class="p-4 bg-blue-400">
                                 Pagina Landing Page
                             </li>
 
@@ -68,11 +97,11 @@
                         </ul>
                     </div>
 
-                    <div class="text-center bg-black text-white">
+                    <div class="text-center text-white bg-black">
                         <p>Paquete 2</p>
 
-                        <ul class="list-none p-1">
-                            <li class="bg-blue-400 p-4">
+                        <ul class="p-1 list-none">
+                            <li class="p-4 bg-blue-400">
                                 Pagina Landing Page
                             </li>
 
@@ -88,11 +117,11 @@
                         </ul>
                     </div>
 
-                    <div class="text-center bg-black text-white">
+                    <div class="text-center text-white bg-black">
                         <p>Paquete 3</p>
 
-                        <ul class="list-none p-1">
-                            <li class="bg-blue-400 p-4">
+                        <ul class="p-1 list-none">
+                            <li class="p-4 bg-blue-400">
                                 Pagina Landing Page
                             </li>
 
@@ -114,7 +143,7 @@
             <!-- Seccion de portafolio -->
 
             <section class="col-span-12">
-                <h2>Revisa nuestras propuestas</h2>
+                <h2 class="text-center">Conócenos</h2>
                 <div>
                     
                 </div>
@@ -123,7 +152,6 @@
 
             <!-- Nuestras fotos y efecto de circulo pra nuestras fotos con info  -->
             <section class="col-span-12 text-center">
-                <h2 class="text-3xl">Quienes somos</h2>
 
                 <div class="flex flex-row">
 
@@ -150,22 +178,22 @@
 
             <!-- pie de pagina  -->
             <footer class="col-span-12 bg-black">
-                <div class="text-white text-xs flex flex-col p-2 justify-center">
+                <div class="flex flex-col justify-center p-2 text-xs text-white">
                     <div class="text-center">
-                        <p>Contactanos</p>
+                        <p>Contáctanos</p>
                     </div>
                     
-                    <nav class="flex flex-row p-2 text-center justify-center">
+                    <nav class="flex flex-row justify-center p-2 text-center">
                      
                         <div class="mr-4">
-                            <i class="fab fa-facebook"></i><a class="text-white mb-2 no-underline ml-2" href="#">Facebook</a>
+                            <i class="fab fa-facebook"></i><a class="mb-2 ml-2 text-white no-underline" href="#">Facebook</a>
                         </div>
-                        <div class="mr-4 ml-2">
-                            <i class="fab fa-twitter"></i><a class="text-white mb-2 no-underline ml-2" href="#">Twitter</a>
+                        <div class="ml-2 mr-4">
+                            <i class="fab fa-twitter"></i><a class="mb-2 ml-2 text-white no-underline" href="#">Twitter</a>
                         </div>
 
                        <div class="ml-2">
-                        <i class="fab fa-whatsapp"></i><a class="text-white mb-2 no-underline ml-2" href=#>Whatsapp</a>
+                        <i class="fab fa-whatsapp"></i><a class="mb-2 ml-2 text-white no-underline" href=#>Whatsapp</a>
                        </div>
                        
                     </nav>
