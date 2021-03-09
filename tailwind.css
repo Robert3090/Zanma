@@ -1,7 +1,33 @@
-@tailwind bases;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.crystal{
+  position: relative;
+  line-height: 1;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+}
+
+@font-face {
+  font-family: Diamond;
+  src: url(fonts/diamante_regular.ttf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Diamond-bold;
+  src: url(fonts/diamante_bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Diamond-thin;
+  src: url(fonts/diamante_light.ttf);
+  font-weight: light;
 }

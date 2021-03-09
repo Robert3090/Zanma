@@ -6,198 +6,384 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://kit.fontawesome.com/023c980079.js" crossorigin="anonymous"></script>
-
-    <title>Zanma Devs</title>
+    <link rel="shortcut icon" href="img/Zamna-03.ico" type="image/x-icon">
+    <title>Zamna Devs</title>
 
 </head>
 
-<body>
-    <div class="container mx-auto">
-        <div class="grid grid-cols-12 gap-2">
+<body class="font-Diamond">
+    <!-- <div class="container mx-auto"> -->
+    <div class="grid grid-cols-12 gap-2">
 
-            <header class="w-full col-span-12 h-contain">
+        <header class="col-span-12 h-contain font-Diamond-bold">
 
-                <div class="absolute pl-10 leading-none text-center">
-                    <h1 class="text-5xl text-white">Zanma Devs</h1>
+            <div class="bg-white top-0 absolute">
+                <img class="h-20 xl:h-64 rounded-xl" src="img/Zamna-05.png" alt="">
+            </div>
+
+            <div class="absolute w-full top-24 xl:top-1/3">
+               
+
+                <div class="text-center">
+                    <p class="text-white text-3xl xl:text-7xl">Somos <span class="typed"></span></p>
                 </div>
+            </div>
 
-                <video class="w-full" autoplay="autoplay" loop="loop" preload="auto" src="video/code.mp4" muted></video>
+            <video class="w-full" autoplay="autoplay" loop="loop" preload="auto" src="video/code.mp4" muted></video>
 
-            </header>
+        </header>
 
-            <section class="col-span-12 text-center">
-                <div>
-                    <p class="text-3xl">
-                        La modernidad, la elegancia y lo atrevido en nuestras páginas
+        <section class="col-span-12 text-center">
+            <div class="p-4">
+                <p class="text-2xl xl:text-5xl">
+                    La modernidad, la elegancia y lo atrevido en nuestras páginas
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="col-span-12 bg-fixed bg-center bg-cover h-80 " style="background-image: url(img/portada1.jpg);">
+            
+            <div class="flex flex-col justify-center items-center h-full">
+                <div class="text-white text-3xl xl:text-7xl text-center font-Diamond-thin">
+                    <p>Asi como tú creces, tambien hazlo con tú negocio</p> 
+                </div>
+            </div>
+                   
+
+        </section>
+
+        <!-- sección para Quiénes somos -->
+        <section class="col-span-12 gap-2 text-center">
+            <div class="h-8 bg-repeat-x bg-contain" style="background-image: url(img/Zamna-04\ -\ copia.jpg);">
+                
+            </div>
+            <h2 class="text-4xl my-10 font-Diamond-bold">Quienes somos?</h2>
+            <div class="flex flex-row justify-center" style="height: 700px;">
+                <div class="w-screen xl:w-1/2 p-2 mr-2 relative">
+                    <div class="absolute top-16 left-1/4  w-1/3 z-10 shadow-2xl ">
+                        <img class="rounded-lg" src="img/seccion3.jpg" alt="">
+                    </div>
+
+                    <div class="absolute right-14 w-1/2 z-0 shadow-2xl rounded-lg" >
+                        <img class="rounded-lg" src="img/seccion2.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="col-span-12 text-center h-20">
+            <div class="flex flex-col justify-center w-11/12 mx-auto relative">
+                <div class="absolute bottom-10 rounded-lg shadow-2xl text-white bg-black p-6 rellax z-30" data-rellax-speed="4" data-rellax-percentage="0.5">
+                    <p class="text-2xl xl:text-3xl">
+                        Somos un equipo de desarrolladores que creamos páginas partiendo de cero,
+                        lo que significa que sólo tendrá lo que necesita sin estar cargada de plugins o código extra
+                        que pueda interferir en la experiencia de los usuarios. No pierdas ventas por una página lenta.
                     </p>
                 </div>
+            </div>
 
-            </section>
+            <div class="h-8 bg-repeat-x bg-contain" style="background-image: url(img/Zamna-04\ -\ copia.jpg);">
+                
+            </div>
+        </section>
 
+        <!-- Aqui estara seccion de cards -->
+        <section class="col-span-12">
+            <div class="mb-10">
+                <h2 class="text-center text-4xl font-Diamond-bold">Paquetes para tu negocio</h2>
+            </div>
+        </section>
 
-            <section class="col-span-12 bg-fixed bg-center bg-cover h-80" style="background-image: url(img/portada1.jpg);">
-                <div class="p-2">
-                    <P class="text-3xl text-center text-white">
-                        Asi como creces tú , tambien hazlo con tu negocio
-                    </P>
-                </div>
+        <section class="col-span-12 md:col-span-4">
+            <div class="text-center text-white bg-black">
+                <p class="text-xl">Paquete 1</p>
+          
+                <ul class="p-1 list-none text-lg">
+                    <li class="p-2 bg-blue-400 font-bold">
+                        Landing Page
+                    </li>
 
-            </section>
+                    <li class="p-2">
+                        Dominio Gratis
+                    </li>
 
-            <!-- sección para Quiénes somos -->
-            <section class="grid grid-cols-1 col-span-12 gap-2 text-center md:grid-cols-2">
-                    <div class=" md:col-span-2">
-                        <p class="text-4xl font-extrabold">Quiénes Somos</p>
-                        <p class="text-2xl">
-                            Somos un equipo de desarrolladores que creamos páginas partiendo de cero,
-                            lo que significa que sólo tendrá lo que necesita sin estar cargada de plugins o código extra 
-                            que pueda interferir en la experiencia de los usuarios. No pierdas ventas por una página lenta.
-                        </p>
-                    </div>
+                    <li class="p-2">
+                        Hosting Gratuito
+                    </li>
 
-                    <div class="">
-                        <p class="text-4xl font-extrabold">Nuestra misión</p>
-                        <p class="text-2xl">
-                            Acercarte con potenciales clientes 
-                            haciendo la página de tu negocio atractiva 
-                            para crear un vínculo con ellos
-                        </p>
-                    </div>
+                    <li class="p-2">
+                        $2500 <span class="bg-red-500 text-white p-2 rounded-2xl">-20%<span>
+                    </li>
 
-                    <div class="">
-                        <p class="text-4xl font-extrabold">Nuestra esencia</p>
-                        <p class="text-2xl">
-                            Nos mantenemos constantemente actualizados con las
-                            tendencias de diseño para hacer que tu página de presentación
-                            tenga un estilo moderno y fresco
-                        </p>
-                    </div>
-            </section>
-
-           <!-- Aqui estara seccion de cards -->
-            <section class="col-span-12">
-                <h2 class="text-center">Paquetes para tu negocio</h2>
-                <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
-                    <div class="text-center text-white bg-black">
-                        <p>Paquete 1</p>
-
-                        <ul class="p-1 list-none">
-                            <li class="p-4 bg-blue-400">
-                                Pagina Landing Page
-                            </li>
-
-                            <li class="p-4">
-                                Dominio Gratis
-                            </li>
-
-                            <li class="p-4">
-                                Hosting Gratuito
-                            </li>
+                    <li class="p-2">
+                        Solo es una pagina
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
-                        </ul>
-                    </div>
+        <section class="col-span-12 md:col-span-4">
+            <div class="text-center text-white bg-black">
+                <p class="text-xl">Paquete 2</p>
 
-                    <div class="text-center text-white bg-black">
-                        <p>Paquete 2</p>
+                <ul class="p-1 list-none text-xl">
+                    <li class="p-2 bg-blue-400 font-bold">
+                        Zamna Web Basic
+                    </li>
 
-                        <ul class="p-1 list-none">
-                            <li class="p-4 bg-blue-400">
-                                Pagina Landing Page
-                            </li>
+                    <li class="p-2">
+                        Dominio Gratis
+                    </li>
 
-                            <li class="p-4">
-                                Dominio Gratis
-                            </li>
+                    <li class="p-2">
+                        Hosting Gratuito
+                    </li>
+                    <li class="p-2">
+                        $3000
+                    </li>
 
-                            <li class="p-4">
-                                Hosting Gratuito
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="text-center text-white bg-black">
-                        <p>Paquete 3</p>
-
-                        <ul class="p-1 list-none">
-                            <li class="p-4 bg-blue-400">
-                                Pagina Landing Page
-                            </li>
-
-                            <li class="p-4">
-                                Dominio Gratis
-                            </li>
-
-                            <li class="p-4">
-                                Hosting Gratuito
-                            </li>
+                    <li class="p-2">
+                        Incluye sitio web con 4 paginas
+                    </li>
+                </ul>
+        </section>
 
 
-                        </ul>
-                    </div>
+        <section class="col-span-12 md:col-span-4">
+            <div class="text-center text-white bg-black">
+                <p class="text-xl">Paquete 3</p>
 
-                </div>
-            </section>
+                <ul class="p-1 list-none text-xl">
+                    <li class="p-2 bg-blue-400 font-bold">
+                       Zamna Bussines
+                    </li>
 
-            <!-- Seccion de portafolio -->
+                    <li class="p-2">
+                        Dominio Gratis
+                    </li>
 
-            <section class="col-span-12">
+                    <li class="p-2">
+                        Hosting Gratuito
+                    </li>
 
-            </section>
+                    <li class="p-2">
+                        Pide cotizacion
+                    </li>
+
+                    <li class="p-2">
+                      Pagina con tienda
+                    </li>
+                
+                </ul>
+        </section>
+
+        <!-- Seccion de portafolio -->
+        <section class="col-span-12 text-center">
+            <div class="my-10">
+                <h2 class="text-center text-4xl">Proyectos</h2>
+            </div>
+           
+        </section>
+
+        <section class="col-span-12 xl:col-span-6">
+        <a href="cafeteria/index.html" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full" src="img/cafeteria.png" alt="Landing page">
+                <figcaption class="p-2">Cafeteria</figcaption>
+            </figure>
+        </a>
+
+        </section>
 
 
-            <!-- Nuestras fotos y efecto de circulo pra nuestras fotos con info  -->
-            <section class="col-span-12 text-center">
-                <div class="">
-
-                    <div class="fas fa-address-book">
-                        Axel
-                    </div>
-    
-                    <div class="fas fa-address-book">
-                        Robert
-                    </div>
-    
-                    <div class="fas fa-address-book">
-                        Cid
-                    </div>
-    
+        <section class="col-span-12 xl:col-span-6">
+            <a href="https://concasicowoodwworks.000webhostapp.com/" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full" src="img/Concasico.png" alt="Landing page">
+                <figcaption class="p-2">Semi-Tienda</figcaption>
+            </figure>
+            </a>
+        </section>
 
 
-                </div>
-           </section>
+        <section class="col-span-12 xl:col-span-6">
+            <a href="pasteleria/index.html" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full" src="img/pasteleria.png" alt="Landing page">
+                <figcaption class="p-2">Pasteleria</figcaption>
+            </figure>
+        </a>
+        </section>
+
+        <section class="col-span-12 xl:col-span-6">
+            <a href="https://copiastinocos.000webhostapp.com/" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full" src="img/copias.png" alt="Landing page">
+                <figcaption class="p-2">Centro-de-Copiado</figcaption>
+            </figure>
+            </a>
+
+        </section>
 
 
-            <!-- pie de pagina  -->
-            <footer class="col-span-12 bg-black">
-                <div class="flex flex-col justify-center p-2 text-xs text-white">
-                    <div class="text-center">
-                        <p>Contáctanos</p>
-                    </div>
-                    
-                    <nav class="flex flex-row justify-center p-2 text-center">
-                     
-                        <div class="mr-4">
-                            <i class="fab fa-facebook"></i><a class="mb-2 ml-2 text-white no-underline" href="#">Facebook</a>
+        <section class="col-span-12 xl:col-span-6">
+            <a href="blog/practica12.html" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full" src="img/Blog.png" alt="Landing page">
+                <figcaption class="p-2">Blog</figcaption>
+            </a>
+            </figure>
+
+        </section>
+
+        <section class="col-span-12 xl:col-span-6">
+            <a href="docu/proyecto4.html" target="_blank" rel="noopener noreferrer"><figure class="border-black border-4 text-center">
+                <img class="w-full h-2/5" src="img/Doc.png" alt="Landing page">
+                <figcaption class="p-2">Documentación</figcaption>
+            </figure>
+        </a>
+        </section>
+
+
+
+        <!-- Nuestras fotos y efecto de circulo pra nuestras fotos con info  -->
+        <section class="col-span-12 text-center bg-cover bg-no-repeat bg-top" style="background-image: url(img/4.jpg);" >
+            
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 xl:my-20">
+
+                    <div class="flex flex-col my-3 p-5 w-4/5 mx-auto rounded-3xl shadow-xl crystal text-white">
+                        <div class="w-1/3 mx-auto">
+                            <img class="w-full rounded-full" src="img/Axel.jpg" alt="">
                         </div>
-                        <div class="ml-2 mr-4">
-                            <i class="fab fa-twitter"></i><a class="mb-2 ml-2 text-white no-underline" href="#">Twitter</a>
+                        <div class="">
+                            <h3 class="font-bold text-xl">CEO Zamna</h3>
+                            <p class="font-light text-base">Axel Tinoco</p>
                         </div>
-
-                       <div class="ml-2">
-                        <i class="fab fa-whatsapp"></i><a class="mb-2 ml-2 text-white no-underline" href=#>Whatsapp</a>
-                       </div>
-                       
-                    </nav>
-
+                        <div class="">
+                            <a href="https://www.facebook.com/axel.tinoco.1"  target="_blank"><i class="fab fa-facebook p-2"></i></a>
+                            <a href="https://twitter.com/Axel_Tinoco"  target="_blank"><i class="fab fa-twitter p-2"></i></a>
+                            <a href="https://github.com/Zer0-maker"  target="_blank"><i class="fab fa-github p-2"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+               
+                
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 xl:my-20">
+                    <div class="flex flex-col my-3 p-5 w-4/5 mx-auto rounded-3xl shadow-xl crystal text-white">
+                        <div class="w-1/3 mx-auto">
+                            <img class="w-full rounded-full" src="img/Roberto.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="font-bold text-xl">Co-Founder</h3>
+                            <p class="font-light text-base">Roberto Moreno</p>
+                        </div>
+                        <div class="">
+                            <a href="https://www.facebook.com/robert.moreno.58" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook p-2"></i></a>
+                            <a href="https://twitter.com/DevsZamna" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter p-2"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-        </div>
+
+
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 xl:my-20">
+                    <div class="flex flex-col my-3 p-5 w-4/5 mx-auto rounded-3xl shadow-xl crystal text-white">
+                        <div class="w-1/3 mx-auto">
+                            <img class="w-full rounded-full" src="img/Armando.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="font-bold text-xl">Back End Web Developer</h3>
+                            <p class="font-light text-base">Armando Mendez</p>
+                        </div>
+                        <div class="">
+                            <a href="https://www.facebook.com/armando.mendez.7503" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook p-2"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter p-2"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 xl:my-20">
+                    <div class="flex flex-col my-3 p-5 w-4/5 mx-auto rounded-3xl shadow-xl crystal text-white">
+                        <div class="w-1/3 mx-auto">
+                            <img class="w-full rounded-full" src="img/Ivette.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="font-bold text-xl">Designer UX/UI </h3>
+                            <p class="font-light text-base">Ivette Martinez</p>
+                        </div>
+                        <div class="">
+                            <a href="https://www.facebook.com/Iemitsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook p-2"></i></a>
+                            <a href="https://twitter.com/DevsZamna" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          
+
+            
+
+
+
+            
+
+
+     
+         
+        </section>
+
+
+        <!-- pie de pagina  -->
+        <footer class="col-span-12 bg-black">
+            <div class="flex flex-col justify-center p-2 pt-2 text-xs text-white">
+                <div class="text-center">
+                    <p class="text-xl xl:text-2xl">Contáctanos</p>
+                </div>
+
+                <nav class="flex flex-row justify-center p-2 text-center text-sm">
+
+                    <div class="mr-4">
+                        <i class="fab fa-facebook"></i><a class="mb-2 ml-2 text-white no-underline"
+                            href="https://www.facebook.com/ZamnaDevs">Facebook</a>
+                    </div>
+                    <div class="ml-2 mr-4">
+                        <i class="fab fa-twitter"></i><a class="mb-2 ml-2 text-white no-underline" href="https://twitter.com/DevsZamna">Twitter</a>
+                    </div>
+
+                    <div class="ml-2">
+                        <i class="fab fa-whatsapp"></i><a class="mb-2 ml-2 text-white no-underline" href="https://api.whatsapp.com/send?phone=525538284348">Whatsapp</a>
+                    </div>
+
+                </nav>
+
+            </div>
+        </footer>
+
     </div>
+    <!-- Script -->
+    
+<!-- Start of Async Callbell Code -->
+<script>
+    window.callbellSettings = {
+      token: "WQtnNuHEWCzBXK9GwZc5jj2g"
+    };
+  </script>
+  <script>
+    (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
+  <!-- End of Async Callbell Code -->
+  
+  
+    <script src="js/rellax.min.js"></script>
+    <script src="js/rellax.js"></script>
+    <script src="js/jquery.aniview.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
