@@ -31,3 +31,7 @@
   src: url(fonts/diamante_light.ttf);
   font-weight: light;
 }
+
+.pop-div{
+  transition: all 1s ease-in-out;
+}
