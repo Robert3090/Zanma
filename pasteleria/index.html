@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> 
+    <title>Glass</title>
+</head>
+<body>
+   <section class=" relative min-h-screen flex justify-center overflow-hidden items-center">
+        <header class="absolute flex w-10/12  items-center justify-between z-50 top-0 p-9">
+            <a href="" class="relative text-white text-3xl no-underline">Pasteleria Ilusion</a>
+            <div class="toggle relative bg-center bg-no-repeat flex justify-center items-center w-8 h-7 " onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="titulo z-20 text-center">
+            <h2 class="text-white text-8xl font-Dancing my-1">Delicia </h2><br>
+            <span class="text-3xl bg-white text-black p-2 font-thin font-Quicksand">Reposteria Fina</span>
+        </div>
+        <video class="absolute w-screen h-screen object-cover" src="video/pastel.mp4" autoplay muted loop></video>
+        <ul class="menu absolute top-1/2 left-1/2 z-50 text-2xl md:text-4xl font-Quicksand">
+            <li style="--i:1;"><a href="#">Inicio</a></li>
+            <li style="--i:2;"><a href="#">Acerca de </a></li>
+            <li style="--i:3;"><a href="#">Galeria</a></li>
+            <li style="--i:4;"><a href="#">Contacto</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+      function menuToggle(){
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

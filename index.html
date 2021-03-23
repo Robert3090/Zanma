@@ -21,14 +21,14 @@
         <div class="flex justify-between">
             <div class="flex space-x-4 xl:space-x-6">
                 <div class="">
-                    <img class="h-12 py-2 ml-4" src="img/Z.png" alt="">
+                    <a href="#inicio"><img class="h-12 py-2 ml-4" src="img/Z.png" alt="zamna logo"></a>
                 </div>
 
                 <div class="items-center hidden space-x-6 md:flex xl:text-2xl xl:space-x-14 ">
-                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color" href="#">Quiénes somos?</a>
-                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color"" href="#">Paquetes</a>
-                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color"" href="#">Proyectos</a>
-                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color" href="#">Servicios Plus</a>
+                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color" href="#quienes">Quiénes somos?</a>
+                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color"" href="#paquetes">Paquetes</a>
+                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color"" href="#portafolio">Proyectos</a>
+                    <a class="transition duration-500 ease-in-out border-b-2 border-transparent hover:border-b-2 hover:border-Zamna-color" href="#servicios">Servicios Plus</a>
                 </div>
             </div>
            
@@ -42,10 +42,10 @@
     </div>
 
     <div class="hidden text-white mobile-menu">
-        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#">Quiénes somos?</a>
-        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#">Paquetes</a>
-        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#">Proyectos</a>
-        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#">Servicios Plus</a>
+        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#quienes">Quiénes somos?</a>
+        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#paquetes">Paquetes</a>
+        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#portafolio">Proyectos</a>
+        <a class="block px-4 py-2 transition-all duration-500 hover:bg-Zamna-color hover:text-black " href="#servicios">Servicios Plus</a>
     </div>
 
   </nav>
@@ -54,13 +54,13 @@
 
 
     <!-- <div class="container mx-auto"> -->
-    <div class="grid grid-cols-12">
+    <div class="grid grid-cols-12" id="inicio">
 
         <header class="relative col-span-12 mt-8 bg-scroll font-Diamond-bold">
 
             <div class="absolute flex flex-col items-center justify-center w-full mt-6 md:mt-0">
                 <div class="w-1/4" >
-                    <img class="w-10/12" loading="lazy" src="img/ZamnaSVG.svg" alt="">
+                    <img class="w-full" loading="lazy"  src="img/ZamnaSVG.svg" alt="">
                 </div>
               
                 
@@ -108,13 +108,13 @@
             </div>
         </section>
 
-        <section class="col-start-6 text-center col-span-full">
+        <section class="col-start-6 text-center col-span-full" id="quienes">
             <div class="p-4">
                 <img class="shadow-2xl rounded-3xl" loading="lazy" src="img/equipo.jpg" alt="">
             </div>
 
 
-                <div class="z-10 flex flex-col justify-center text-center bg-transparent">
+                <div class="z-10 flex flex-col justify-center text-center bg-transparent" >
                     <div class="self-end p-4 mt-3">
                         <p class="text-xl xl:text-5xl">
                             Somos un equipo de desarrollo de plataforma online, diseñamos páginas web partiendo de cero
@@ -163,7 +163,7 @@
 
 <section class="col-span-12 bg-fixed bg-center bg-no-repeat bg-cover" style="background-image: url(img/fondos/textura.png);">      
 <!-- Aqui estara seccion de cards -->
-        <div class="col-span-12 my-10 text-4xl text-center text-white">Paquetes para tu negocio</div>
+        <div class="col-span-12 my-10 text-4xl text-center text-white" id="paquetes">Paquetes para tu negocio</div>
         <div class="grid w-11/12 grid-cols-1 gap-8 m-auto mb-16 text-center text-white md:mb-40 md:grid-cols-3">
 
             <div>
@@ -190,7 +190,7 @@
 <!--Fin de las cards-->
 
 <!-- Seccion de portafolio -->
-    <section class="mb-16 md:mb-24">
+    <section class="mb-16 md:mb-24" id="portafolio">
         <div class="my-10 text-center text-white">
             <h2 class="text-4xl text-center">Proyectos</h2>
         </div>
@@ -231,7 +231,7 @@
                 </figure>
             </a>
 
-            <a href="docu/proyecto4.html" target="_blank" rel="noopener noreferrer">
+            <a href="documentacion/proyecto4.html" target="_blank" rel="noopener noreferrer">
                 <figure class="text-center my-9 md:mt-6">
                     <img class="w-10/12 m-auto" loading="lazy" src="img/proyectos/Doc.png" alt="Landing page">
                     <figcaption class="p-2 text-white">Documentación en línea</figcaption>
@@ -242,7 +242,7 @@
 <!--Fin del portafolio-->
 
 <!--Servicios plus-->
-<div class="col-span-12 my-10 text-4xl text-center text-white">Servicios Adicionales</div>
+<div class="col-span-12 my-10 text-4xl text-center text-white" id="servicios">Servicios Adicionales</div>
 <div class="grid grid-cols-1 gap-4 m-auto mb-32 text-center text-white">
 
     <div class="flex justify-center">
@@ -256,7 +256,7 @@
 
 
 <!-- Nuestras fotos y efecto de circulo para nuestras fotos con info  -->
-        <section class="col-span-12 text-center bg-scroll bg-top bg-no-repeat bg-cover" style="background-image: url(img/4.jpg);" >
+        <section class="col-span-12 text-center bg-scroll bg-top bg-no-repeat bg-cover" id="equipo" style="background-image: url(img/4.jpg);" >
             
             <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-6 xl:col-span-3 xl:my-20">
