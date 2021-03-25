@@ -1,0 +1,103 @@
+@tailwind base ;
+@tailwind components;
+@tailwind utilities;
+
+
+.toggle{
+    background: url(img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.toggle:before{
+    content: 'Menu';
+    position: absolute;
+    right: 3rem;
+    color: white;
+    padding: 2px 5px;
+    background: #fff;
+    color: #111;
+}
+
+.toggle.active{
+    background: url(img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toggle.active:before{
+    content: 'Close';
+}
+
+.glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    box-shadow: 10px 0 15px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    transition-delay: 1s;
+
+}
+
+section.active .glass{
+
+    width: 100%;
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 0 15px rgba(0,0,0,0.5);
+    transition-delay: 0s;
+}
+
+section .titulo{
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+
+
+section.active .titulo{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-200px);
+    transition-delay: 0s;
+}
+
+
+section .menu{
+    transition: 0.5s;
+    transition-delay: 1s;
+    transform: translate(-50% ,-50%);
+}
+
+
+section .menu li{
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(200px);
+    transition-delay: calc(0.2s * var(--i));
+}
+
+section .menu li a{
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+section.active .menu li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px); 
+}
+
+

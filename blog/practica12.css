@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    background: url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header .menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.header .menu a:hover{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+   
+}
+
+/*Seccion principal*/
+
+.main{
+    width: 70%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.main article .thumb{
+    margin-bottom: 20px;
+}
+
+.main article .thumb img{
+    width: 100%;
+    vertical-align:top;
+}
+
+.main article h2{
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.main article p{
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 2rem;
+}
+
+
+
+aside{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+aside .ad{
+    margin: 20px 0;
+    background-color: rgb(153, 153, 153);
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(112, 111, 111, 0.596);
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+}
+
+footer .redes a{
+    color: white;
+    text-decoration: underline;
+    margin-left: .9rem;
+}
+
+footer .redes a:hover{
+    text-decoration: none;
+
+}
+
+footer .autor{
+    color: aliceblue;
+}
+
+
+
+/*media querys*/
+
+@media screen and (max-width:800px){
+    .main{
+     width: 100%;
+    }
+
+    aside{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .header{
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .header .menu{
+        width: 100%;
+        background-color:rgba(112, 111, 111, 0.596);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .header .logo{
+        margin-bottom: 1.4rem;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    footer .autor{
+        order: 2;
+        margin-top: 1rem;
+    }
+
+}
+
+
